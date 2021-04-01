@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #0;
+  opacity: 100%;
+  padding: 45px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 97%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 0px;
+  border-bottom: 3px solid transparent;
+}
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+  color: #00b8e6
+}
+
+#navbar a:hover {
+  border-bottom: 3px solid #00b8e6;
+  color: white;
+}
+
+#navbar a.active {
+    border-bottom: 3px solid #00b8e6;
+
+}
+
+#navbar-right {
+  float: right;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<div id="navbar">
+  <a href="Homepage.html" id="logo">SnowSnow</a>
+  <div id="navbar-right">
+    <a href="Homepage.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Skill.html">Skills</a>
+    <a href="Project.html">Project</a>
+    <a class="active"href="Contact.html">Contact</a>
+  </div>
+</div>
+
+
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40){
+    document.getElementById("navbar").style.padding = "20px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "40px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+
+
+</script>
+
+</nav>
+<section>
+
+<div style="background-color: #000000;" id="wedding">
+<div class="carousel-inner">
+  <div class="carousel-item active">
+  <img src="C:\Users\admin\Desktop\GD1401\img2\image.3.jpg"width="70%" height="auto">
+  <div class="carousel-caption"></div>
+  
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+
+form {
+  border: 3px solid #f1f1f1;
+  font-family: Arial;
+}
+
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+
+}
+
+input[type=submit] {
+  background-color: #00b8e6;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+</style>
+<body>
+
+<h2></h2>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h2>Cooperate with me now</h2>
+    <p></p>
+  </div>
+
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="SENT ME">
+  </div>
+</form>
+
+</body>    
+
+
+</section>

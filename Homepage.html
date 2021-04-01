@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+
+
+.icon-bar {
+  position: fixed;
+  top: 80%;
+  left: 95%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+
+.pinterest {
+  
+}
+
+.facebook {
+  
+}
+
+.youtube {
+  
+}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #0;
+  opacity: 100%;
+  padding: 45px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 97%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 0px;
+  border-bottom: 3px solid transparent;
+}
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+  color: #00b8e6
+}
+
+#navbar a:hover {
+  border-bottom: 3px solid #00b8e6;
+  color: white;
+}
+
+#navbar a.active {
+    border-bottom: 3px solid #00b8e6;
+
+}
+
+#navbar-right {
+  float: right;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<div id="navbar">
+  <a href="Homepage.html" id="logo">SnowSnow</a>
+  <div id="navbar-right">
+    <a class="active" href="Homepage.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Skill.html">Skills</a>
+    <a href="Project.html">Project</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+</div>
+<div class="carousel-inner">
+  
+    <div class="carousel-item active">
+      <img src="C:\Users\admin\Desktop\GD1401\img2\image 1.jpg"width="100%" height="auto">
+      <div class="carousel-caption"></div>
+         
+         
+      </div>   
+    </div>
+<div class="icon-bar">
+  
+  <a href="https://www.pinterest.com/hoangthituyetk13_hn/_saved/" class="pinterest"><i class="fa fa-pinterest"></i></a> 
+  <a href="https://www.facebook.com/profile.php?id=100014228530355" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="https://www.youtube.com/channel/UCHZqAaKEQdHebwLJspXblkA" class="youtube"><i class="fa fa-youtube"></i></a> 
+  
+</div>
+
+  
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40){
+    document.getElementById("navbar").style.padding = "20px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "40px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+
+
+</script>
+</body>
+</html>

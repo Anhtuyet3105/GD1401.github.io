@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">  
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+
+
+<style>
+
+.icon-bar {
+  position: fixed;
+  top: 80%;
+  left: 95%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+
+.pinterest {
+  
+}
+
+.facebook {
+  
+}
+
+.youtube {
+  
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 300%;
+  color:white;
+  }
+  
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 160%;
+  color:white;
+}
+
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color:white;
+}
+
+h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color:#00b8e6;
+}
+body, html {height: 100%}
+
+
+
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #0;
+  opacity: 100%;
+  padding: 45px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 98%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 0px;
+  border-bottom: 3px solid transparent;
+}
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+  color: #00b8e6
+}
+
+#navbar a:hover {
+  border-bottom: 3px solid #00b8e6;
+  color: white;
+}
+
+#navbar a.active {
+    border-bottom: 3px solid #00b8e6;
+
+}
+
+#navbar-right {
+  float: right;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+</style>
+<body>
+
+
+<div id="navbar">
+  <a href="Homepage.html" id="logo">SnowSnow</a>
+  <div id="navbar-right">
+    <a href="Homepage.html">Home</a>
+    <a class="active"href="About.html">About</a>
+    <a href="Skill.html">Skills</a>
+    <a href="Project.html">Project</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+</div>
+<div class="icon-bar">
+  
+  <a href="https://www.pinterest.com/hoangthituyetk13_hn/_saved/" class="pinterest"><i class="fa fa-pinterest"></i></a> 
+  <a href="https://www.facebook.com/profile.php?id=100014228530355" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="https://www.youtube.com/channel/UCHZqAaKEQdHebwLJspXblkA" class="youtube"><i class="fa fa-youtube"></i></a> 
+  
+</div>
+
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40){
+    document.getElementById("navbar").style.padding = "20px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "40px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+
+
+</script>
+
+</nav>
+<section>
+
+<div style="background-color: #000000;" id="wedding">
+<div class="carousel-inner">
+  
+    <div class="carousel-item active">
+      <img src="C:\Users\admin\Desktop\GD1401\img2\image.3.jpg"width="20%" height="auto">
+      <div class="carousel-caption"></div>
+  
+  <h1 style="text-align: center;color:#00b8e6;  ">About Me</h1>
+  
+  <hr class="w-100">
+
+<div class="container">
+  <div class="row">
+
+    <div class="col">
+      <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+video {
+  width: 100%;
+  height: auto;
+}
+</style>
+</head>
+<body>
+
+<img width="400" >
+  <div class="carousel-item active">
+      <img src="C:\Users\admin\Desktop\GD1401\img2\png3.png"width="102%" height="auto">
+      <div class="carousel-caption"></div>
+    </div>
+    </div>
+        
+        <div class="col">
+          <br>
+          <br>
+      <h2> My name is Tuyet.</h2>
+      <br>
+      <h3>  Currently I am a 4th year student at FPT University and the subject that I am studying is Graphic Design. There are a lot of friends who asked me why I chose to study graphic design and my only answer is because I love to draw and like to create my own works. Although I have no natural talent, I have a passion and a desire to learn and innovate every day.</h3>
+      
+     
+      <br>
+      <h3>Full name:</h3>
+      <h4> Hoang Thi Tuyet </h4>
+    
+      <br>
+      <h3>Date of birth:</h3>
+      <h4> 31/05/1999 </h4>
+
+      <br>
+      <h3>The phone number:</h3>
+      <h4> 0346.127.124 </h4>
+
+      <br>
+      <h3>Email:</h3>
+      <h4> anhtuyetha130253@gmail.com </h4>
+
+      <br>
+      <h3>Education:</h3>
+      <h4> FPT University - Specialized in graphic design </h4>
+    </div>
+  </div>
+</div>
+
+</section>
+
